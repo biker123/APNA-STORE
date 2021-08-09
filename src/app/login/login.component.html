@@ -1,0 +1,43 @@
+
+<div class="container-fluid">
+<div class="container">
+    <div class="formBox">
+
+        <form [formGroup]="loginForm" (ngSubmit)="dataSubmit()">
+ 
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="inputBox">
+                            <div class="inputText">UserName or Email</div>
+                            <input type="email" formControlName="email" class="input">
+                       
+                            <!-- Validation -->
+                <div *ngIf="loginForm.controls['email'].errors?.required">
+                  Required Feild.
+                </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-sm-6">
+                        <div class="inputBox">
+                            <div class="inputText">Password</div>
+                            <input type="text" formControlName="password" class="input">
+                        
+                            <!-- Validation -->
+                                <div *ngIf="loginForm.controls['password'].errors?.required">
+                                    Required Feild.
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div><p>{{this.errorMsg}}</p></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="submit" class="button" value="LOGIN">
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+</div>

@@ -1,0 +1,35 @@
+/* 
+.card {
+    height: 50vh;
+    margin: 55px;
+    padding: 50px;
+    margin-left: 100px;
+ }  */
+.center img {
+    height: 200px;
+    width: 250px;
+    margin: 70px;
+    margin-left: 41%;
+    margin-top: 10%;
+  
+
+}
+.btn{
+    margin-left: 48%;
+    margin-bottom: 5px;
+}
+h4{
+    margin-left: 43%;
+    color: orangered;
+    
+}
+h6{
+    margin-left: 46%;
+    
+}
+.btn{
+    color:black;
+    margin-right: 40px;
+}
+
+ 
