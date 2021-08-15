@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { CartService } from '../cart.service';
 import { ActivatedRoute } from '@angular/router';
-@Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
-})
-export class ProductsComponent implements OnInit {
 
+@Component({
+  selector: 'app-cart',
+  templateUrl: './cart.component.html',
+  styleUrls: ['./cart.component.css']
+})
+export class CartComponent implements OnInit {
   productList;
 
   homeData;
@@ -35,6 +35,9 @@ export class ProductsComponent implements OnInit {
         });
        })
    }
+
+  addtocart(item: any){
+    this.cart.addtoCart(item);
+   }
   
 }
-// export class backet ses:-41 line a.

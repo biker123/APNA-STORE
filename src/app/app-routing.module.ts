@@ -10,6 +10,8 @@ import { ViewComponent } from './view/view.component';
 import { CheakoutComponent } from './cheakout/cheakout.component';
 import { ProfileComponent } from './profile/profile.component';
 import { OrderComponent } from './order/order.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { CartComponent } from './cart/cart.component';
 const routes: Routes = [
   {path:'', redirectTo:'home',pathMatch:'full'},
   {path:'addtocart',component:AddtocartComponent},
@@ -21,7 +23,9 @@ const routes: Routes = [
   {path:'view',component:ViewComponent},
   {path:'cheakout',component:CheakoutComponent},
   {path:'profile',component:ProfileComponent},
-  {path:'order',component:OrderComponent}
+  {path:'order',component:OrderComponent},
+  {path:'contactus',component:ContactusComponent},
+  {path:'cart',component:CartComponent}
 ];
 
 @NgModule({

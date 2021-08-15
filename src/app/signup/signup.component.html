@@ -1,108 +1,59 @@
-<!-- <div class="myPage">
-<div class="SIGNUPFORM">
-<form [formGroup]="signupForm" (ngSubmit)="dataSubmit()">
-    <div class="form-group">
-        <label for="exampleInputEmail1"> First Name:</label>
-        <input type="fname" formControlName="fname" class="form-control" id="exampleInputFname" aria-describedby="fnameHelp" placeholder="Enter your first name">
-      
-    <div *ngIf="signupForm.controls['fname'].errors?.required">
-      Required Feild.
-   </div>
-      </div>
-    
-      <div class="form-group">
-        <label for="exampleInputEmail1"> Last Name:</label>
-        <input type="lname" formControlName="lname" class="form-control" id="exampleInputLname" aria-describedby="lnameHelp" placeholder="Enter your last name">
-    
-      <div *ngIf="signupForm.controls['lname'].errors?.required">
-        Required Feild.
-     </div>
-   </div>
-       
-
-    <div class="form-group">
-      <label for="exampleInputEmail1">UserName or Email address:</label>
-      <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    
-    <div *ngIf="signupForm.controls['email'].errors?.required">
-      Required Feild.
-   </div>
-  </div>
-     
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password:</label>
-      <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    
-    <div *ngIf="signupForm.controls['password'].errors?.required">
-      Required Feild.
-   </div>
-  </div>
-     
-  <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-  </div>
-  </div> -->
 
 
-
-
-  <div class="container-fluid stylish-form">
-   
-    <div class="row mar20" >
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="inner-section">
-          <form method="POST" action="https://google.co.in">
-            <div class="mar20 inside-form">
-              <h2 class="font_white text-center">SIGN UP</h2>
-              <ul>
-                <li class="icon-holder dsp-flex">
-                  <i class="fa fa-facebook "></i>
-                </li>
-                <li class="icon-holder dsp-flex">
-                  <i class="fa fa-twitter "></i>
-                </li>
-                <li class="icon-holder dsp-flex">
-                  <i class="fa fa-instagram "></i>
-                </li>
-              </ul>
-              <form [formGroup]="signupForm" (ngSubmit)="dataSubmit()">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-pencil "></i></span>
-                <input type="text" class="form-control" formControlName="fname" placeholder="Enter your first name">
+   <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+          <div class="card-img-left d-none d-md-flex">
+            
+          </div>
+          <div class="card-body p-4 p-sm-5">
+            <h5 class="card-title text-center mb-5 fw-light fs-5">SIGN UP</h5>
+            
+            <form [formGroup]="signupForm" (ngSubmit)="dataSubmit()">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" formControlName="fname" placeholder="enter your first name" required autofocus>
+                <label for="floatingInputUsername">First Name:</label>
+              
+                <div *ngIf="signupForm.controls['fname'].errors?.required">
+                  Required Feild.
+               </div>
               </div>
-              <div *ngIf="signupForm.controls['fname'].errors?.required">
-                Required Feild.
-             </div>
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-pencil "></i></span>
-                <input type="text" class="form-control" formControlName="lname" placeholder="Enter your last name">
-              </div>
-                            
-              <div *ngIf="signupForm.controls['lname'].errors?.required">
-                Required Feild.
-             </div>
 
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-envelope "></i></span>
-                <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
-              </div>
-              <div *ngIf="signupForm.controls['email'].errors?.required">
-                Required Feild.
-             </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" formControlName="lname" placeholder="enter your last name">
+                <label for="floatingInputEmail">Last Name:</label>
 
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-lock "></i></span>
-                <input type="password" class="form-control" formControlName="password" placeholder=" Enter password">
-                </div>
+                <div *ngIf="signupForm.controls['lname'].errors?.required">
+                  Required Feild.
+               </div>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" formControlName="email" placeholder="enter your email">
+                <label for="floatingPassword">Email Address:</label>
+
+                <div *ngIf="signupForm.controls['email'].errors?.required">
+                  Required Feild.
+               </div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" formControlName="password" placeholder="enter your Password">
+                <label for="floatingPasswordConfirm">Password:</label>
+
                 <div *ngIf="signupForm.controls['password'].errors?.required">
-                  Required Feild.</div> 
+                  Required Feild.
+                </div> 
+              </div>
 
-             <div><p>{{this.errorMsg}}</p></div>     
-              <div class="footer text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
-               
-              </div>  
-        </form>
+              <div><p>{{this.errorMsg}}</p></div> 
+
+              <div class="d-grid mb-2">
+                <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">SIGN UP</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    
-  
+    </div>
+  </div>

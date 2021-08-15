@@ -2,14 +2,18 @@
 
 .navbar{
     background-image: url(../../assets/NAV.jpg);
-    border: 2px solid rgb(9, 238, 112);
+   
+}
+.waves-effect{
+    color: red;
 }
 .nav-item{
-    color: black;
-    font-size: 15px;
+    color:red;
+    font-size: 16px;
+    font-weight: 600;
 }
 .btn{
-    color: black;
+    color: rgb(241, 10, 10);
 }
 .nav-link:hover{
 background-color: rgb(228, 63, 159);

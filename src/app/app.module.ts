@@ -17,7 +17,9 @@ import { ViewComponent } from './view/view.component';
 import { FooterComponent } from './footer/footer.component';
 import { CheakoutComponent } from './cheakout/cheakout.component';
 import { ProfileComponent } from './profile/profile.component';
-import { OrderComponent } from './order/order.component'
+import { OrderComponent } from './order/order.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { CartComponent } from './cart/cart.component'
 
 
 @NgModule({
@@ -36,6 +38,8 @@ import { OrderComponent } from './order/order.component'
     CheakoutComponent,
     ProfileComponent,
     OrderComponent,
+    ContactusComponent,
+    CartComponent,
   
   ],
   imports: [

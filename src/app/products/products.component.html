@@ -8,7 +8,8 @@
                 <p class="card-text">Title:{{homeData.title}}</p>
                 <p class="card-text">Description:{{homeData.description}}</p>
                 <p><strong>Price:</strong> ${{item.price}}</p>
-                <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+                <!-- <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button> -->
+                <button class="btn btn-primary" routerLink="/cart">Click</button>
             </div>
         </ng-container>
 
